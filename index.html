@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio Personal</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="imagenes/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="height: 100%;">
+        <div id="container">
+    <header class="head" data-sr-id="0" style="visibility: visible; opacity: 1; transition: all, opacity 0.6s ease-in 0.25s;">
+        <h1 class="centrar">Carpeta personal de Alejandro</h1>
+    </header>
+    <main class="main" data-sr-id="2" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.5s, transform 0.6s cubic-bezier(0.5, 0, 0, 1) 0.5s;">
+        <h1 class="centrar">Bienvenido</h1>
+        <p class="centrar">En este espacio, encontrarás una selección de los proyectos que he desarrollado a lo largo de mi trayectoria. Cada trabajo refleja mi pasión por la creatividad, la atención al detalle y el compromiso con la calidad. Estoy siempre en busca de nuevos desafíos, y aquí te muestro cómo he abordado cada uno con innovación y dedicación. Te invito a explorar mi trabajo, conocer mi enfoque, y si algo resuena contigo, no dudes en contactarme. ¡Espero que disfrutes del recorrido!</p>
+        <figure>
+            <img width="300" src="imagenes/dibujo4.png">
+            <p class="centrar">Para explorar mas, les comparto<a href="https://www.youtube.com/channel/UCBsLBPCgvy0cOqMIobbmKBg"> Mi canal de Youtube</a> o de igual forma un contacto directo en<a href="https://x.com/Alex321Yagami"> Mi Twitter</a></p>
+        </figure>
+        <div id="my-driv"></div>
+    </main>
+    <aside class="lado" data-sr-id="3" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.8s, transform 0.6s cubic-bezier(0.5, 0, 0, 1) 0.8s;">
+        <h1 class="centrar">Trabajos</h1>
+        <ol>
+            <li>
+                <a href="Carteles.html">Carteles</a>
+            </li>
+            <li>
+                <a href="Seriefoto1.html">Primera serie fotografica</a>
+            </li>
+            <li>
+                <a href="Seriefoto2.html">Segunda serie fotografica</a>
+            </li>
+            <li>
+                <a href="barrido.html">Efecto de barrido</a>
+            </li>
+            <li>
+                <a href="congelado.html">Efecto de congelado</a>  
+            </li>
+            <li>
+                <a href="Dibujoluz.html">Dibujo con luz</a>
+            </li>
+            <li>
+                <a href="creativo.html">Perspectiva creativa</a>
+            </li>
+            <li>
+                <a href="Galeria.html">Galeria de dibujos</a>
+            </li>
+        </ol>
+        <video width="300" controls>
+            <source src="imagenes/Videoxd.mp4" type="video/mp4">
+            <source src="imagenes/Videoxd.ogv" type="video/ogg">
+        </video>
+    </aside>
+    <footer class="pie" data-sr-id="4" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 1s, transform 0.6s cubic-bezier(0.5, 0, 0, 1) 1s;">
+        <p class="centrar">Alejandro Herrera Rodriguez 2024</p>
+    </footer>
+        </div>
+    <script src="js/vivus.js"></script>
+    <script>
+        new Vivus('my-driv', {duration: 30, type:'scenario-sync'  ,file:'imagenes/hola.svg'}); 
+    </script>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.head', { delay: 250, easing: 'ease-in' });
+        ScrollReveal().reveal('.main', { delay: 500, scale: 0.85 });
+        ScrollReveal().reveal('.lado', { delay: 800, rotate: {x: 20, z: 20},})
+        ScrollReveal().reveal('.pie', { delay: 1000, distance: '150%', origin: 'boton' } );
+    </script>
+     
+<!--
+Gracias por revisar mi codigo profe!!!
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░▄▄▄░░░░░░░░░
+░░░░░░░░░░░░░░▄▄▄▄▄▄▄▄░░░░░░█████▄░░░░░░
+░░░░░░░░░▄▄█████████████▀░░▄░░▀████▄░░░░
+░░░░░░▄▄███▀▀░░▄▄▄▄▄▄░░▀░░████▄░▀████░░░
+░░░░▄███▀░▄▄██████▀▀███░░▄█▀▀░▀▀▄░▀███▄░
+░░░▄██▀░▄███▀▀▀███▄▄██░░▄██░░░░░█▄░▀███░
+░░███░▄██████████████▀░░███▄░░░▄██▄░████
+░███░▄████░█████░▀██▀░░█████████▀▀▀░░░░░
+▄██░░██████▀▀███████░░▀▀▀▀▀░░░░░░░░░░░░░
+███░██████░░░░█████░░░░░░░░░▄▄▄▄░░██░░░░
+██░░██████▄░░▄█████▄▄▄█████▀▀███░░██░░░░
+███░███▄░▀█████▀▀███████████████░░██░░░░
+███░▀██████▀████▄▄█████▄▄███▀███░▄██░░░░
+░██▄░██████▄▄██████▀▀▀█████▄▄██░░██▀░░░░
+░▀██▄░▀█▀▀████████░░░░░███████░░██▀░░░░░
+░░▀██▄░▀███████████▄░▄▄█████▀░▄██▀░░░░░░
+░░░░▀██▄░░▀███▄▄▄████████▀▀░▄███▀░░░░░░░
+░░░░░░▀███▄░░▀▀▀▀▀▀▀▀▀▀░░▄▄███▀░░░░░░░░░
+░░░░░░░░▀▀████▄▄▄▄▄▄▄▄█████▀░░░░░░░░░░░░
+░░░░░░░░░░░░░▀▀▀▀▀▀▀▀▀▀░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░█████████████████████████░░░░░░░░
+░░░░░░░█────█───█────█────█────█░░░░░░░░
+░░░░░░░█─██─██─████──███──█─██─█░░░░░░░░
+░░░░░░░█────██─███──███──██────█░░░░░░░░
+░░░░░░░█─█████─██──███──███─██─█░░░░░░░░
+░░░░░░░█─████───█────█────█─██─█░░░░░░░░
+░░░░░░░█████████████████████████░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     
+-->
+
+    </body>
+</html>

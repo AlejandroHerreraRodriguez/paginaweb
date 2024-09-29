@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serie fotografica No 2</title>
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+          </symbol>
+          <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+          </symbol>
+          <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+          </symbol>
+          <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </symbol>
+        </svg>
+    
+        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                Light
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                Dark
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                Auto
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+    
+        
+    <header data-bs-theme="dark">
+      <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4>Hola, soy Alejandro</h4>
+              <p class="text-body-secondary">En este momento, mientras lees estas líneas, sigo estudiando diseño gráfico... o quizá ya haya concluido. Mientras tanto, te invito a explorar una parte de mi trabajo práctico, incluida esta página, que también forma parte de mis ejercicios creativos.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4>Contacto</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://x.com/Alex321Yagami" class="text-white">Contacto Directo a mi Twitter</a></li>
+                <li><a href="https://www.youtube.com/channel/UCBsLBPCgvy0cOqMIobbmKBg" class="text-white">Mi canal de Youtube para mas contenido</a></li>
+                <li><a href="https://youtu.be/dQw4w9WgXcQ?si=kofv-naKTpC_8HdZ" class="text-white">El lado misterioso de la isla wudu wudu</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <strong>Album</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+    
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Segunda serie fotografica</h1>
+            <p class="lead text-body-secondary">En términos simples, el toy photography es el fotografiar juguetes, no como fotografía de producto, sino creando y recreando historias con una o más figuras como modelos y protagonistas, y, a partir de la fotografía, buscar o crear un ambiente que contextualice el entorno de la figura, llegando como resultado final a una imagen, donde el espectador pueda sentir que esa figura es un elemento vivo dentro de la misma imagen, sin perder o dejar de lado el factor artístico.</p>
+            <p>
+              <a href="https://youtu.be/ECbdM8Ch1X8?si=ZBsL5Uv_uzc2nLZz" class="btn btn-primary my-2">Acompaña esta serie fotografiaca con esta cancion</a>
+              <a href="https://youtu.be/5hmnKXUooXM?si=ntVsXzWdt5tKcfl2" class="btn btn-primary my-2">O esta puede ser de tu agrado</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    
+      <div>
+        <a class="example-image-link" href="imagenes/series1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" width="500" src="imagenes/series1.jpg" alt=""/></a>
+        <a class="example-image-link" href="imagenes/series5.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" width="500" src="imagenes/series5.jpg" alt="" /></a>
+        <a class="example-image-link" href="imagenes/series3.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" width="500" src="imagenes/series3.jpg" alt="" /></a>
+        <a class="example-image-link" href="imagenes/series4.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" width="500" src="imagenes/series4.jpg" alt="" /></a>
+
+        <a class="example-image-link" href="imagenes/series2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" width="500" src="imagenes/series2.jpg" alt=""/></a>
+        <a class="example-image-link" href="imagenes/series6.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" width="500" src="imagenes/series6.jpg" alt="" /></a>
+        <a class="example-image-link" href="imagenes/series7.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" width="500" src="imagenes/series7.jpg" alt="" /></a>
+        <a class="example-image-link" href="imagenes/series8.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" width="500" src="imagenes/series8.jpg" alt="" /></a>
+
+        <a class="example-image-link" href="imagenes/series9.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" width="500" src="imagenes/series9.jpg" alt=""/></a>
+        <a class="example-image-link" href="imagenes/series15.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" width="500" src="imagenes/series15.jpg" alt="" /></a>
+        <a class="example-image-link" href="imagenes/series10.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" width="500" src="imagenes/series10.jpg" alt="" /></a>
+        <a class="example-image-link" href="imagenes/series11.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" width="500" src="imagenes/series11.jpg" alt="" /></a>
+
+        <a class="example-image-link" href="imagenes/series12.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" width="500" src="imagenes/series12.jpg" alt=""/></a>
+        <a class="example-image-link" href="imagenes/series13.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" width="500" src="imagenes/series13.jpg" alt="" /></a>
+        <a class="example-image-link" href="imagenes/series14.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" width="500" src="imagenes/series14.jpg" alt="" /></a>
+      </div>
+    
+    </main>
+    
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">Album example is © Bootstrap, but please download and customize it for yourself!</p>
+        <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.3/getting-started/introduction/">getting started guide</a>.</p>
+      </div>
+    </footer>
+
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="../dist/js/lightbox-plus-jquery.min.js"></script>
+    <!--
+    Gracias por revisar mi codigo profe
+    211_1_1____2¶¶¶¶66¶¶¶¶¶¶¶88¶88__¶888¶¶2________126
+__________¶¶¶¶¶12¶¶¶¶¶8¶¶¶866¶612¶8¶¶¶6_1_________
+211_1___6¶¶¶¶¶¶¶¶¶¶¶¶¶¶866¶¶66¶822¶¶8886681_______
+1111____2¶¶¶¶¶¶¶¶¶¶¶¶¶¶8688¶¶8_8¶2168¶61126_______
+21___268¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶8¶¶¶¶¶¶68¶6_188__666______
+11__12¶¶¶¶¶¶228¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶68¶2_26¶2_2861____
+1__16¶¶¶¶¶6___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶61¶¶_¶¶6¶____122__
+1__8¶¶¶¶¶6____6¶¶¶¶8¶¶¶¶¶¶¶¶¶¶¶¶218¶18¶61¶1______1
+2186¶¶¶¶2_1____28682¶8¶8¶¶¶¶¶¶¶¶¶_68266¶1_2¶1_____
+6862¶¶¶¶__1_____6___26_16¶8¶¶¶8__¶211612¶8_¶¶81886
+¶88¶¶¶¶81_1____12________________¶¶1_11_6¶_2¶¶2___
+6¶¶¶¶¶¶6__2____1________________2_88_2_1_¶1¶8661__
+1_¶¶¶¶¶2__8______________________1¶22____¶688¶¶12_
+_2¶¶¶¶¶8__21_1_11_____________1__¶__11_1_¶81¶¶¶1__
+_2¶¶¶¶¶¶1_2621_1________________18___26__2¶2_¶¶___
+28_¶¶¶¶¶1__262_____1_______1_____2___1611_8¶126___
+8__¶¶¶¶¶2_282_______________1____2___62_2__2¶¶6___
+__2¶8¶8¶6_6¶¶¶8182______________622__16__12__82___
+__¶2_2¶¶¶_6¶¶¶¶¶¶¶¶12__61_2¶¶¶¶¶¶¶¶66_6___¶¶21112_
+1_81__8¶¶__6¶¶268¶¶¶¶61¶¶¶¶¶¶¶2_18¶¶1__1_2¶¶¶2_1_1
+8_22__1¶¶1__6¶¶¶¶¶¶¶¶_____¶¶¶¶¶¶¶_1¶____1¶¶¶¶8____
+1_22__1¶¶8____6¶¶¶2__________81___6______¶¶¶¶¶2___
+_______¶¶¶2_______________________2______626¶¶6___
+_______8¶¶6_______16__________________1__¶¶¶¶8¶81_
+_____686¶¶¶¶2___12______________________¶¶¶¶8¶¶¶86
+___2¶¶¶¶8¶¶¶6_____26_______________16___¶¶¶¶¶¶¶¶¶6
+86¶¶¶¶¶¶¶¶¶¶¶¶221__2¶881__________22_____¶¶¶¶¶128¶
+¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶882_16_____¶¶¶21____1_1¶¶¶¶¶228¶
+¶¶¶¶¶¶¶¶8¶¶¶¶8¶¶¶8¶¶¶¶¶¶¶¶¶62¶¶¶8___2___¶¶¶¶¶¶86¶¶
+¶¶¶¶¶¶¶¶¶¶¶¶¶8162__6¶¶¶¶¶¶66_______6____¶¶¶¶¶¶66¶¶
+¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶66___88¶88________¶¶____¶¶¶¶¶¶862¶¶
+¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶6¶1____________¶¶¶1___¶¶¶¶¶¶¶¶626¶
+¶¶¶¶¶¶¶8¶¶¶¶¶2¶8¶¶¶2_________2¶81___2¶¶¶¶¶¶¶¶86618
+¶¶¶¶¶¶8¶¶¶¶¶¶2¶¶¶¶8¶¶¶8¶622¶¶¶_____6¶¶¶¶¶8¶¶¶8288¶
+¶¶¶¶¶¶¶¶¶¶¶8¶¶8888¶628¶¶¶¶¶2¶¶6____1¶¶¶¶¶8¶¶¶8¶¶¶¶
+¶¶¶¶¶¶¶¶6¶¶8¶¶2666866¶¶¶¶¶¶_¶¶¶____6¶¶¶¶¶8¶¶68¶¶8¶
+¶¶¶¶¶¶¶¶68¶6¶¶668628¶¶¶¶¶¶82¶¶¶¶__1¶¶¶¶¶62¶¶68¶¶88
+¶¶¶¶¶¶¶¶6¶¶¶¶¶¶6666¶¶¶8¶2118¶¶¶¶6_8¶¶¶¶¶128¶6¶¶¶¶¶
+¶¶¶¶¶¶¶¶¶¶¶88¶¶862¶¶¶8¶¶2826¶¶¶¶¶¶¶¶66¶¶16¶¶¶¶¶¶¶8
+¶¶¶¶¶¶¶¶8¶¶¶2¶¶¶8¶¶¶28¶¶¶¶_2¶¶¶8¶¶¶22¶¶618¶¶¶¶¶¶¶¶
+¶¶¶¶¶¶¶¶82¶¶28¶¶¶¶8_28¶¶¶2__¶881_¶618¶¶12¶¶¶¶¶¶¶¶¶
+    -->
+</body>
+</html>
